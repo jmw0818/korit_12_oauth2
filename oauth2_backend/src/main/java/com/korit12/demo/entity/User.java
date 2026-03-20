@@ -62,9 +62,15 @@ public class User {
         return user;
     }
 
-
-
     public enum Role {
         ROLE_USER, ROLE_ADMIN
+    }
+
+    public void updateName(String name) {
+        this.name = name;
+    }
+
+    public void updatePassword(String password) {
+        this.password = password;
     }
 }
